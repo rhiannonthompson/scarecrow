@@ -1,0 +1,301 @@
+:root {
+  --main-white: #ffffff;
+  --main-black: #333333;
+  --main-gray: #4f4f4f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 62.5%; /* Now 10px = 1rem*/
+  font-family: "Space Mono", monospace;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  color: var(--main-black);
+}
+
+h1 {
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--main-black);
+}
+
+.message > p {
+  color: var(--main-gray);
+}
+
+.button > a {
+  color: var(--main-white);
+  background-color: var(--main-black);
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+footer > p {
+  font-family: "Montserrat", monospace;
+  color: var(--main-black);
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 680px) {
+  
+  /* for text styling*/
+
+  h1 {
+    position: relative;
+    width: 13.3rem;
+    height: 2.5rem;
+    left: 2.4rem;
+    top: 2.0rem;
+
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.08em;
+  }
+
+  h2 {
+    position: relative;
+    width: 90%;
+    height: auto;
+    left: 2.4rem;
+    padding: 2.0rem;
+    margin-top: 2.0rem;
+
+    font-size: 4.8rem;
+    line-height: 7.1rem;
+    letter-spacing: -0.035em;
+  }
+
+  .message > p {
+    position: relative;
+    width: 80%;
+    height: auto;
+    left: 2.4rem;
+    padding-left: 2.0rem;
+
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    letter-spacing: -0.035em;
+
+  }
+
+  /* for image styling*/
+
+  .scarecrow {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 8.8rem;
+  }
+
+  img {
+    display: block;
+    max-width: 80%;
+    padding-left: 20%;
+    height: auto;
+  }
+
+  /* for button and links */
+
+  .button {
+    position: relative;
+    left: 2.4rem;
+    margin-top: 4.0rem;
+    margin-bottom: 4.0rem;
+    padding: 2.0rem;
+  }
+
+  .button > a {
+    padding: 1.5rem 3rem;
+    margin-top: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    letter-spacing: -0.035em;
+  }
+
+  /* for layout */
+  
+  .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+  }
+
+  /* for signiture */
+
+  footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2.5rem;
+  }
+
+  footer > p {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    margin-top: 3.0rem;
+  }
+}
+
+/* for large screens*/
+
+@media only screen and (min-width: 680px) {
+
+  /*for layout*/
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin-left: 7rem;
+  }
+
+  .main-container {
+    display: flex;
+    width: 95%;
+    justify-content: flex-start;
+  }
+
+  .message {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 15rem;
+  }
+
+  .scarecrow {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* for text styling*/
+
+
+  h1 {
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.08em;
+    margin-top: 3rem;
+  }
+
+  h2,
+  .message > p {
+    padding-bottom: 5%;
+  }
+
+  h2 {
+    font-size: 5.4rem;
+    line-height: 8.5rem;
+    letter-spacing: -0.035em;
+    display: flex;
+    max-width: 80%;
+  }
+
+  .message > p {
+    font-size: 2.3rem;
+    line-height: 3.6rem;
+    letter-spacing: -0.035em;
+    max-width: 62%;
+  }
+
+  /* for button styling*/
+
+  .button {
+    display: flex;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    letter-spacing: -0.035em;
+    margin-top: 1rem;
+  }
+
+  .button > a {
+    padding: 1.5rem 3rem;
+    margin-top: 1.6rem;
+  }
+
+  /* for signature line*/
+
+  footer > p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    margin-bottom: 3rem;
+  }
+}
+
+/* for mid-sized screens */
+
+@media only screen and (min-width: 680px) and (max-width: 1020px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  h2 {
+    font-size: 4.1rem;
+    line-height: 7.5rem;
+    letter-spacing: -0.025em;
+    width: 100%;
+  }
+  .message > p {
+    font-size: 1.8rem;
+    line-height: 3.1rem;
+    letter-spacing: -0.025em;
+    max-width: 80%;
+  }
+
+  .main-container {
+    width: 100%;
+  }
+
+  .message {
+    width: 50%;
+    padding-left: 4rem;
+  }
+
+  .scarecrow {
+    width: 50%;
+  }
+
+  .button {
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+  }
+
+  .button > a {
+    padding: 1.5rem 2rem;
+    margin-top: 1.6rem;
+  }
+
+  footer > p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+}
+
+/*the end*/
+
